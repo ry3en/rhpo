@@ -1,0 +1,25 @@
+{
+  "name": "rhpo",
+  "version": "1.0.0",
+  "description": "Interactive menu",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass src/styles/sass/main.scss src/styles/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ry3en/rhpo.git"
+  },
+  "author": "Mauro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ry3en/rhpo/issues"
+  },
+  "homepage": "https://github.com/ry3en/rhpo#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  },
+  "dependencies": {
+    "jquery": "^3.6.3"
+  }
+}
