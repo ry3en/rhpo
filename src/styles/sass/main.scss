@@ -1,14 +1,15 @@
-@import "base";
-@import "animations";
-@import "typography";
-@import "utilities";
+@forward "base/base";
+@forward "base/animations";
+@forward "base/typography";
+@forward "base/utilities";
 
-@import "functions";
-@import "mixins";
-@import "variables";
+@forward "abstracts/functions";
+@forward "abstracts/mixins";
+@forward "abstracts/variables";
 
-@import "home";
+@forward "pages/home";
 
-@import "button";
+@forward "components/button";
 
-@import "header";
+@forward "layout/header";
+

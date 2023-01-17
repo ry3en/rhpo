@@ -4,7 +4,7 @@
   "description": "Interactive menu",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass src/styles/sass/main.scss src/styles/css/style.css -w"
+    "compile:sass": "sass --watch src/styles/sass/main.scss:src/styles/css/style.css"
   },
   "repository": {
     "type": "git",
@@ -16,9 +16,6 @@
     "url": "https://github.com/ry3en/rhpo/issues"
   },
   "homepage": "https://github.com/ry3en/rhpo#readme",
-  "devDependencies": {
-    "node-sass": "^8.0.0"
-  },
   "dependencies": {
     "jquery": "^3.6.3"
   }
