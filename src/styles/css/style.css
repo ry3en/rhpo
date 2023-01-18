@@ -14,6 +14,42 @@ body {
   box-sizing: border-box;
 }
 
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -25,7 +61,7 @@ body {
 .header-primary {
   color: #fff;
   text-transform: uppercase;
-  -webkit-backface-visibility: hidden;
+  --webkit-backface-visibility: hidden;
   margin-bottom: 6rem;
 }
 .header-primary--main {
@@ -40,7 +76,7 @@ body {
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1.75;
-  animation: moveRightIn 1s ease-out;
+  animation: moveInRight 1s ease-out;
 }
 
 .btn--white {
@@ -90,7 +126,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to top right, rgba(0, 15, 130, 0.9), rgba(99, 4, 223, 0.8)), url(BG2.jpg);
+  background-image: linear-gradient(to top right, rgba(0, 15, 130, 0.9), rgba(99, 4, 223, 0.8)), url(../../images/BG4.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
