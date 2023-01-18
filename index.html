@@ -1,43 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="src/styles/css/style.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Menu | RH</title>
-  </head>
-  <body>
-    <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="">
-      <label for="navi-toggle" class="navigation__button">MENU</label>
-      <div class="navigation__background">&nbsp;</div>
-      <nav class="navigation__nav">
-        <ul class="navigation__list">
-          <li class="navigation__item"><a href="#" class="navigation__link"></a>Transporte</li>
-          <li class="navigation__item"><a href="#" class="navigation__link"></a>Avisos</li>
-          <li class="navigation__item"><a href="#" class="navigation__link"></a>Fechas Importantes</li>
-          <li class="navigation__item"><a href="#" class="navigation__link"></a>Organigrama</li>
-          <li class="navigation__item"><a href="#" class="navigation__link"></a>Contrato</li>
-          <li class="navigation__item"><a href="#" class="navigation__link"></a>Matriz</li>
+  <link rel="stylesheet" href="src/styles/css/style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" />
 
+  <title>Menu | RH</title>
+</head>
 
-        </ul>
-      </nav>
+<body>
+  <div class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle navi-toggle" class="navigation__button">MENU</label>
+    <div class="navigation__background">&nbsp;</div>
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="#" class="navigation__link"><span><img src="src/icons/bus.png"
+                class="header__logo" /></span>Rutas</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link"><span><img src="src/icons/announcement.png"
+                class="header__logo" /></span>
+            Avisos</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link"><span><img src="src/icons/party.png" class="header__logo" /></span>Fechas
+            Importantes
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link"><span><img src="src/icons/organization.png"
+                class="header__logo" /></span>
+            Organigrama</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link"><span><img src="src/icons/contract.png" class="header__logo" /></span>
+            Contrato</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link"><span><img src="src/icons/engineer-skin-type-5.png"
+                class="header__logo" /></span>
+            Matriz</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <header class="header">
+    <div class="header__logo-box">
+      <img src="src/images/LOGO.png" alt="Logo PO" class="header__logo" />
     </div>
-    <header class="header">
-      <div class="header__logo-box">
-      </div>
-      <div class="header__text-box">
-        <h1 class="header-primary">
-          <span class="header-primary--main"> Menu interactivo </span>
-          <span class="header-primary--sub"> PO - Puebla </span>
-        </h1>
-        <a href="#" class="btn btn--white btn--animated">Menu</a>
-      </div>
-    </header>
-  </body>
+    <div class="header__text-box">
+      <h1 class="header-primary">
+        <span class="header-primary--main"> Menu interactivo </span>
+        <span class="header-primary--sub"> PO - Puebla </span>
+      </h1>
+      <a href="#" class="btn btn--white btn--animated">Menu</a>
+    </div>
+  </header>
+</body>
+
 </html>
