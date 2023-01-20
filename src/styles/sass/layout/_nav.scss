@@ -16,6 +16,7 @@
         border-radius: 50%;
         z-index: 2000;
         box-shadow: 0 1rem 3rem rgba(variables.$color-black, .1);
+        text-align: center;
     }
 
     &__background {
@@ -25,9 +26,9 @@
         position: fixed;
         top: 6.5rem;
         right: 6.5rem;
-        background-image: radial-gradient(variables.$color-blue-dark, variables.$color-purple);
+        background-image: radial-gradient(variables.$color-blue, variables.$color-purple);
         z-index: 1000;
-        transition: transform .8s;
+        transition: transform .8s cubic-bezier(0.86, 0, 0.07,1);
 
         //transform: scale(100);
     }
@@ -42,7 +43,7 @@
         opacity: 0;
         width: 0;
 
-        transition:  opacity .8s;
+        transition:  all .8s cubic-bezier(0.86, 0, 0.07,1);
     }
 
     &__list {
@@ -55,7 +56,7 @@
     }
 
     &__item {
-        margin: 1rem;
+        margin: 1 rem;
     }
 
     &__link {
@@ -82,7 +83,7 @@
         &:hover,
         &:active {
             background-position: 100%;
-            color: variables.$color-blue-dark;
+            color: variables.$color-blue;
             transform: translateX(3rem);
         }
     }
@@ -92,6 +93,44 @@
     &__checkbox:checked ~ &__nav {
         opacity: 1;
         width: 100%;
-        height: 90%;
     }
+
+    &__icon{
+        position: relative;
+        margin-top: 3.2rem;
+        &,
+        &::before,
+        &::after{
+            width: 3rem;
+            height: 2px;
+            background-color: variables.$color-black;
+            display: inline-block;
+            transform: all .2s;
+        }
+
+        &::before,
+        &::after{
+            content: "";
+            position: absolute;
+            left: 0;
+        }
+        &::before{
+            top: -.8rem;
+
+        }
+        &::after{
+            top: .8rem;
+        }
+        
+        
+    }
+
+    &_butoon:hover &__icon::before{
+        top: -1rem;
+    }
+    
+    &_butoon:hover &__icon::after{
+        top: 1rem;
+    }
+
 }

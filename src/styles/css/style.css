@@ -8,6 +8,7 @@
 
 html {
   font-size: 62.5%;
+  background-color: #eee;
 }
 
 body {
@@ -54,14 +55,14 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .header-primary {
   color: #fff;
   text-transform: uppercase;
   --webkit-backface-visibility: hidden;
-  margin-bottom: 6rem;
+  margin-bottom: 1rem;
 }
 .header-primary--main {
   display: block;
@@ -148,7 +149,7 @@ body {
 
 .header-home {
   height: 95vh;
-  background-image: linear-gradient(to top right, rgba(0, 15, 130, 0.9), rgba(86, 67, 250, 0.8)), url(../../images/BG4.jpg);
+  background-image: linear-gradient(to top right, rgba(41, 152, 255, 0.5), rgba(86, 67, 250, 0.8)), url(../../images/BG4.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -183,6 +184,7 @@ body {
   border-radius: 50%;
   z-index: 2000;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 .navigation__background {
   height: 6rem;
@@ -191,9 +193,9 @@ body {
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: radial-gradient(rgba(0, 15, 130, 0.8), #5643fa);
+  background-image: radial-gradient(#2998ff, #5643fa);
   z-index: 1000;
-  transition: transform 0.8s;
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 }
 .navigation__nav {
   height: 100vh;
@@ -203,7 +205,7 @@ body {
   z-index: 1500;
   opacity: 0;
   width: 0;
-  transition: opacity 0.8s;
+  transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 }
 .navigation__list {
   position: absolute;
@@ -214,7 +216,7 @@ body {
   text-align: center;
 }
 .navigation__item {
-  margin: 1rem;
+  margin: 1 rem;
 }
 .navigation__link {
   color: #fff;
@@ -237,7 +239,7 @@ body {
 }
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
-  color: rgba(0, 15, 130, 0.8);
+  color: #2998ff;
   transform: translateX(3rem);
 }
 .navigation__checkbox:checked ~ .navigation__background {
@@ -246,7 +248,34 @@ body {
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
   width: 100%;
-  height: 90%;
+}
+.navigation__icon {
+  position: relative;
+  margin-top: 3.2rem;
+}
+.navigation__icon, .navigation__icon::before, .navigation__icon::after {
+  width: 3rem;
+  height: 2px;
+  background-color: #000;
+  display: inline-block;
+  transform: all 0.2s;
+}
+.navigation__icon::before, .navigation__icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+.navigation__icon::before {
+  top: -0.8rem;
+}
+.navigation__icon::after {
+  top: 0.8rem;
+}
+.navigation_butoon:hover .navigation__icon::before {
+  top: -1rem;
+}
+.navigation_butoon:hover .navigation__icon::after {
+  top: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
