@@ -1,3 +1,7 @@
+@use "../abstracts/variables" as variables;
+@use "../abstracts/mixins" as mixin;
+
+
 *,
 *::after,
 *::before {
@@ -8,7 +12,21 @@
 
 html {
     font-size: 62.5%;
-    background-color: #eee;
+    @include mixin.respond(big-dek){
+        font-size: 70%;
+    }
+    @include mixin.respond(tab-land){
+        font-size: 56.25%;
+    }
+    @include mixin.respond(tab-port){
+        font-size: 50%;
+    }
+    @include mixin.respond(phone){
+        font-size: 30%;
+    }
+    
+
+    
 }
 
 body {

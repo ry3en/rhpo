@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ry3en/rhpo#readme",
   "dependencies": {
-    "jquery": "^3.6.3"
+    "jquery": "^3.6.3",
+    "sass": "^1.57.1"
   }
 }
