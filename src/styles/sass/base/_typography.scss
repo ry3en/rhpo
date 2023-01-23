@@ -1,8 +1,8 @@
 @use "../abstracts/variables" as variables;
 
 body {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
+    font-family: "Satisfy", cursive;
+    font-weight: 900;
     line-height: 1.7;
     padding: .5rem;
 }
@@ -30,4 +30,21 @@ body {
         letter-spacing: 1.75;
         animation: moveInRight 1s ease-out;
     }
+
+}
+.header-primary-ruta{
+    color: variables.$color-dark-light;
+    text-transform: uppercase;
+
+    --webkit-backface-visibility: hidden;
+    margin-bottom: 1rem;
+
+}
+.header-secondary{
+    color: variables.$color-dark-light !important;
+    -webkit-text-stroke: 2px #000;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(139.47deg, variables.$color-gray 0%, variables.$color-blue-dark-light 68.69%);;
 }

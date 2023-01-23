@@ -1,0 +1,41 @@
+@use "../abstracts/variables" as variables;
+.row {
+  max-width: variables.$grid-width;
+  background-color: variables.$color-white;
+  margin: 0 auto;
+
+  &:not(:last-child) {
+    margin-bottom: variables.$gutter-vertical;
+  }
+
+  @mixin clearfix {
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+
+  [class^="col-ruta"] {
+    background-color: lightgray;
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: 0.5rem;
+      margin-top: 0.5rem;
+    }
+  }
+
+  .col-ruta-1-of-2 {
+    width: calc((100% - #{variables.$gutter-horizontal}) / 2);
+  }
+  .col-ruta-1-of-3{
+    width: calc((100% - 2 * #{variables.$gutter-horizontal}) /3);
+  }
+  .col-ruta-2-of-3{
+    width: calc(2*((100% - 2 * #{variables.$gutter-horizontal}) /3) + #{variables.$gutter-horizontal});
+  }
+  .col-ruta-1-of-4{
+    width: calc((100% - 3 * #{variables.$gutter-horizontal}) /4);
+  }
+}

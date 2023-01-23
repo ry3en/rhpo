@@ -83,8 +83,8 @@ body {
   }
 }
 body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
+  font-family: "Satisfy", cursive;
+  font-weight: 900;
   line-height: 1.7;
   padding: 0.5rem;
 }
@@ -110,22 +110,71 @@ body {
   animation: moveInRight 1s ease-out;
 }
 
-.container {
+.header-primary-ruta {
+  color: #333;
+  text-transform: uppercase;
+  --webkit-backface-visibility: hidden;
+  margin-bottom: 1rem;
+}
+
+.header-secondary {
+  color: #333 !important;
+  -webkit-text-stroke: 2px #000;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(139.47deg, #7f8691 0%, #09389b 68.69%);
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-bottom {
+  margin-bottom: 8rem;
+}
+
+.section-rute {
+  height: 92vh;
+  background-image: linear-gradient(139.47deg, #7f8691 0%, #09389b 68.69%);
+  background-size: cover;
+  padding: 2rem 0;
+  /* Then style the iframe to fit in the container div with full height and width */
+}
+.section-rute__container {
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  padding-top: 56.25%;
+  /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
-
-/* Then style the iframe to fit in the container div with full height and width */
-.responsive-iframe {
+.section-rute__responsive-iframe {
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
   width: 100%;
   height: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: #333;
+  color: #eee;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  border: 1px solid black;
+}
+
+tr:hover {
+  background-color: coral;
 }
 
 .btn--white {
@@ -174,15 +223,15 @@ body {
 }
 
 .header-ruta {
-  height: 10vh;
-  background-image: linear-gradient(139.47deg, #7f8691 0%, #09389b 68.69%);
+  height: 7vh;
+  background-color: #E7E6E6;
   background-size: cover;
   background-position: top;
   position: relative;
 }
 .header-ruta__logo-box {
   position: absolute;
-  top: 4rem;
+  top: 1rem;
   left: 4rem;
 }
 .header-ruta__logo {
@@ -190,7 +239,7 @@ body {
 }
 .header-ruta__text-box {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -267,7 +316,10 @@ body {
   margin: 1 rem;
 }
 .navigation__link {
+  font-size: 16rem;
   color: #fff;
+  -webkit-text-stroke: 1px #000;
+  font-weight: 700;
 }
 .navigation__link:link, .navigation__linkvisited {
   display: inline-block;
@@ -335,6 +387,35 @@ body {
 .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
   top: 0;
   transform: rotate(-135deg);
+}
+
+.row {
+  max-width: 150rem;
+  background-color: #fff;
+  margin: 0 auto;
+}
+.row:not(:last-child) {
+  margin-bottom: 8rem;
+}
+.row [class^=col-ruta] {
+  background-color: lightgray;
+  float: left;
+}
+.row [class^=col-ruta]:not(:last-child) {
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+}
+.row .col-ruta-1-of-2 {
+  width: calc((100% - 1rem) / 2);
+}
+.row .col-ruta-1-of-3 {
+  width: calc((100% - 2 * 1rem) / 3);
+}
+.row .col-ruta-2-of-3 {
+  width: calc(2*((100% - 2 * 1rem) /3) + 1rem);
+}
+.row .col-ruta-1-of-4 {
+  width: calc((100% - 3 * 1rem) / 4);
 }
 
 /*# sourceMappingURL=style.css.map */

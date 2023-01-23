@@ -15,7 +15,7 @@
         right: 6rem;
         border-radius: 50%;
         z-index: 2000;
-        box-shadow: 0 1rem 3rem rgba(variables.$color-black, .1);
+        box-shadow: 0 1rem 3rem rgba(variables.$color-dark, .1);
         text-align: center;
     }
 
@@ -60,7 +60,10 @@
     }
 
     &__link {
+        font-size: 16rem;
         color: variables.$color-white;
+        -webkit-text-stroke: 1px variables.$color-dark;
+        font-weight: 700;
 
         &:link,
         &visited {
@@ -104,7 +107,7 @@
         &::after{
             width: 3rem;
             height: 2px;
-            background-color: variables.$color-black;
+            background-color: variables.$color-dark;
             display: inline-block;
         }
 
