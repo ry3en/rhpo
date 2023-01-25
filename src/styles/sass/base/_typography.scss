@@ -1,7 +1,7 @@
 @use "../abstracts/variables" as variables;
 
 body {
-    font-family: "Satisfy", cursive;
+    font-family: "Staatliches", cursive;
     font-weight: 900;
     line-height: 1.7;
     padding: .5rem;
@@ -46,5 +46,9 @@ body {
     font-size: 3.5rem;
     text-transform: uppercase;
     font-weight: 700;
-    background-image: linear-gradient(139.47deg, variables.$color-gray 0%, variables.$color-blue-dark-light 68.69%);;
+    background-image: linear-gradient(139.47deg, variables.$color-gray 0%, variables.$color-blue-dark-light 68.69%);
+    --webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
 }
