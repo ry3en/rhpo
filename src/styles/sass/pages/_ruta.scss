@@ -24,6 +24,18 @@
     height: 100%;
   }
 }
+.mapa{
+  width: 100%
+
+}
+.table {
+  //width: calc((100% - #{variables.$gutter-horizontal-ruta}) / 2);
+  width: 100%;
+  overflow-y: auto; /* make the table scrollable if height is more than 200 px  */
+  height: 30rem; /* gives an initial height of 200px to the table */
+
+
+}
 
 table {
   font-size: 1.6rem;

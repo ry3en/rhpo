@@ -162,6 +162,16 @@ body {
   height: 100%;
 }
 
+.mapa {
+  width: 100%;
+}
+
+.table {
+  width: 100%;
+  overflow-y: auto; /* make the table scrollable if height is more than 200 px  */
+  height: 30rem; /* gives an initial height of 200px to the table */
+}
+
 table {
   font-size: 1.6rem;
   border-collapse: collapse;
@@ -448,11 +458,6 @@ tr:hover {
 }
 .row .col-ruta-1-of-2 {
   width: calc((100% - 1rem) / 2);
-}
-.row .col-ruta-1-of-2-scroll {
-  width: 50rem;
-  overflow-y: auto; /* make the table scrollable if height is more than 200 px  */
-  height: 30rem; /* gives an initial height of 200px to the table */
 }
 .row .col-ruta-1-of-3 {
   width: calc((100% - 2 * 1rem) / 3);
