@@ -1,6 +1,7 @@
 @use "../abstracts/variables" as variables;
 
 .section-rute {
+  height: 90vh;
   display: block;
   background-size: cover;
   padding: 1rem 4rem;
@@ -26,9 +27,6 @@
 
 table {
   font-size: 1.6rem;
-  display: block;
-  overflow-y: scroll;
-  height: 300px;
   border-collapse: collapse;
   width: 100%;
 
@@ -46,6 +44,9 @@ tr:nth-child(even) {
 }
 
 th {
+  
+  position: sticky;
+  top: 0px;
   background-color: #04aa6d;
   color: white;
 }

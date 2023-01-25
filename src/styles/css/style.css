@@ -139,6 +139,7 @@ body {
 }
 
 .section-rute {
+  height: 90vh;
   display: block;
   background-size: cover;
   padding: 1rem 4rem;
@@ -163,9 +164,6 @@ body {
 
 table {
   font-size: 1.6rem;
-  display: block;
-  overflow-y: scroll;
-  height: 300px;
   border-collapse: collapse;
   width: 100%;
 }
@@ -182,6 +180,8 @@ tr:nth-child(even) {
 }
 
 th {
+  position: sticky;
+  top: 0px;
   background-color: #04aa6d;
   color: white;
 }
@@ -431,12 +431,12 @@ tr:hover {
 }
 
 .row {
-  max-width: 150rem;
+  max-width: 120rem;
   background-color: #fff;
   margin: 0 auto;
 }
 .row:not(:last-child) {
-  margin-bottom: 26rem;
+  margin-bottom: 20rem;
 }
 .row [class^=col-ruta] {
   background-color: lightgray;
@@ -448,6 +448,11 @@ tr:hover {
 }
 .row .col-ruta-1-of-2 {
   width: calc((100% - 1rem) / 2);
+}
+.row .col-ruta-1-of-2-scroll {
+  width: 50rem;
+  overflow-y: auto; /* make the table scrollable if height is more than 200 px  */
+  height: 30rem; /* gives an initial height of 200px to the table */
 }
 .row .col-ruta-1-of-3 {
   width: calc((100% - 2 * 1rem) / 3);

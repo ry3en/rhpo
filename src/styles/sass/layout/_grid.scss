@@ -1,11 +1,11 @@
 @use "../abstracts/variables" as variables;
 .row {
-  max-width: variables.$grid-width;
+  max-width: variables.$grid-width-ruta;
   background-color: variables.$color-white;
   margin: 0 auto;
 
   &:not(:last-child) {
-    margin-bottom: variables.$gutter-vertical;
+    margin-bottom: variables.$gutter-vertical-ruta;
   }
 
   @mixin clearfix {
@@ -27,17 +27,25 @@
   }
 
   .col-ruta-1-of-2 {
-    width: calc((100% - #{variables.$gutter-horizontal}) / 2);
+    width: calc((100% - #{variables.$gutter-horizontal-ruta}) / 2);
+
+  }
+  .col-ruta-1-of-2-scroll {
+    //width: calc((100% - #{variables.$gutter-horizontal-ruta}) / 2);
+    width: 50rem;
+    overflow-y: auto; /* make the table scrollable if height is more than 200 px  */
+    height: 30rem; /* gives an initial height of 200px to the table */
+
 
   }
   .col-ruta-1-of-3{
-    width: calc((100% - 2 * #{variables.$gutter-horizontal}) /3);
+    width: calc((100% - 2 * #{variables.$gutter-horizontal-ruta}) /3);
   }
   .col-ruta-2-of-3{
-    width: calc(2*((100% - 2 * #{variables.$gutter-horizontal}) /3) + #{variables.$gutter-horizontal});
+    width: calc(2*((100% - 2 * #{variables.$gutter-horizontal-ruta}) /3) + #{variables.$gutter-horizontal-ruta});
   }
   .col-orga-1-of-4{
-    width: calc((100% - 3 * #{variables.$gutter-horizontal}) /4);
+    width: calc((100% - 3 * #{variables.$gutter-horizontal-ruta}) /4);
   }
 
 }
