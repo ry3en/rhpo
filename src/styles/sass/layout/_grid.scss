@@ -41,7 +41,6 @@
   max-width: variables.$grid-width-orga;
   background-color: variables.$color-white;
   margin-top: 4rem !important;
-  margin: 15rem auto;
 
   &:not(:last-child) {
     margin-bottom: variables.$gutter-vertical-orga;
@@ -60,19 +59,19 @@
     float: left;
 
     &:not(:last-child) {
-      margin-right: 4rem;
+      margin-right: 3rem;
       margin-top: 2rem;
     }
   }
   
   .col-orga-1-of-3 {
     width: calc((100% - 2 * #{variables.$gutter-horizontal-orga}) / 3);
-    height: 10rem;
+    height: 12rem;
     
   }
   .col-orga-1-of-4 {
     width: calc(((100% - 3 * #{variables.$gutter-horizontal-orga}) / 4));
-    height: 10rem;
+    height: 12rem;
 
   }
 }

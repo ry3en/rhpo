@@ -106,7 +106,7 @@ body {
   display: block;
   font-size: 2rem;
   font-weight: 900;
-  letter-spacing: 1.75;
+  letter-spacing: 1.75rem;
   animation: moveInRight 1s ease-out;
 }
 
@@ -118,15 +118,47 @@ body {
 }
 
 .header-secondary {
-  color: #333 !important;
+  color: #333;
   -webkit-text-stroke: 2px #000;
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
   --webkit-background-clip: text;
-  color: transparent;
   letter-spacing: 0.2rem;
   transition: all 0.2s;
+}
+
+.header-orga {
+  word-wrap: break-word;
+  color: #E7E6E6;
+  -webkit-text-stroke: 1px #000;
+  padding-top: 2rem;
+  vertical-align: middle;
+  display: table-cell;
+  text-align: justify;
+  font-size: 3em;
+  text-transform: uppercase;
+  font-weight: 700;
+  --webkit-background-clip: text;
+  letter-spacing: 0.2rem;
+  width: 80%;
+}
+
+.header-orga-staff {
+  word-wrap: break-word;
+  color: #E7E6E6;
+  -webkit-text-stroke: 1px #000;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  vertical-align: middle;
+  display: table-cell;
+  text-align: justify;
+  font-size: 3em;
+  text-transform: uppercase;
+  font-weight: 700;
+  --webkit-background-clip: text;
+  letter-spacing: 0.2rem;
+  width: 80%;
 }
 
 .u-center-text {
@@ -205,30 +237,24 @@ tr:hover {
 }
 
 .section-orga {
-  height: 90vh;
+  height: 91vh;
   display: block;
   background-size: cover;
-  padding: 6em 4rem;
+  padding: 5em 4rem;
 }
 
 .orga {
+  margin-left: 5rem;
   display: table;
-}
-.orga__staff {
-  padding-top: 2rem;
-  vertical-align: middle;
-  display: table-cell;
-  text-align: justify;
 }
 .orga__logo__staff {
   padding-top: 2rem;
-  width: 30%;
-  padding: 10px;
+  width: 20%;
   float: left;
 }
 .orga__logo_normal {
   padding-top: 2rem;
-  width: 100%;
+  width: 20%;
   vertical-align: middle;
 }
 
@@ -473,7 +499,6 @@ tr:hover {
   max-width: 150rem;
   background-color: #fff;
   margin-top: 4rem !important;
-  margin: 15rem auto;
 }
 .row-orga:not(:last-child) {
   margin-bottom: 50rem;
@@ -483,16 +508,16 @@ tr:hover {
   float: left;
 }
 .row-orga [class^=col-orga]:not(:last-child) {
-  margin-right: 4rem;
+  margin-right: 3rem;
   margin-top: 2rem;
 }
 .row-orga .col-orga-1-of-3 {
   width: calc((100% - 2 * 6rem) / 3);
-  height: 10rem;
+  height: 12rem;
 }
 .row-orga .col-orga-1-of-4 {
   width: calc((100% - 3 * 6rem) / 4);
-  height: 10rem;
+  height: 12rem;
 }
 
 /*# sourceMappingURL=style.css.map */

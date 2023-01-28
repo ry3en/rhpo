@@ -27,7 +27,7 @@ body {
         display: block;
         font-size: 2rem;
         font-weight: 900;
-        letter-spacing: 1.75;
+        letter-spacing: 1.75rem;
         animation: moveInRight 1s ease-out;
     }
 
@@ -41,13 +41,43 @@ body {
 
 }
 .header-secondary{
-    color: variables.$color-dark-light !important;
+    color: variables.$color-dark-light ;
     -webkit-text-stroke: 2px #000;
     font-size: 3.5rem;
     text-transform: uppercase;
     font-weight: 700;
     --webkit-background-clip: text;
-    color: transparent;
     letter-spacing: .2rem;
     transition: all .2s;
+}
+.header-orga{
+    word-wrap: break-word;
+    color: variables.$color-gray-light ;
+    -webkit-text-stroke: 1px variables.$color-dark ;
+    padding-top: 2rem;
+    vertical-align: middle;
+    display: table-cell;
+    text-align: justify;
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 700;
+    --webkit-background-clip: text;
+    letter-spacing: .2rem;
+    width: 80%;
+}
+.header-orga-staff{
+    word-wrap: break-word;
+    color: variables.$color-gray-light ;
+    -webkit-text-stroke: 1px variables.$color-dark ;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    vertical-align: middle;
+    display: table-cell;
+    text-align: justify;
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 700;
+    --webkit-background-clip: text;
+    letter-spacing: .2rem;
+    width: 80%;
 }

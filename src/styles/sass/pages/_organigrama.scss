@@ -1,32 +1,26 @@
 @use "../abstracts/variables" as variables;
 
 .section-orga {
-  height: 90vh;
+  height: 91vh;
   display: block;
   background-size: cover;
-  padding: 6em 4rem;
+  padding: 5em 4rem;
 }
 
 .orga {
+  margin-left: 5rem;
   display: table;
-  &__staff {
-  padding-top: 2rem;
-    vertical-align: middle;
-    display: table-cell;
-    text-align: justify;
-  }
 
   &__logo__staff {
-  padding-top: 2rem;
+    padding-top: 2rem;
 
-    width: 30%;
-    padding: 10px;
+    width: 20%;
     float: left;
   }
+
   &__logo_normal {
-  padding-top: 2rem;
-    
-    width:100%;
-    vertical-align:middle;
+    padding-top: 2rem;
+    width: 20%;
+    vertical-align: middle;
   }
 }
