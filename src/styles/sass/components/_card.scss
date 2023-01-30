@@ -3,12 +3,56 @@
 .card{
   perspective: 150rem;
   -moz-perspective: 150rem;
-  height: 51.7rem;
+  height: 34.65rem;
 
 
   &__side{
     color: white;
-    height: 51.7rem;
+    height: 34.65rem;
+
+
+
+    font-size: 3rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem46rem rgba(variables.$color-dark,.15);
+
+    &--front{
+      background-color: orangered;
+    }
+
+    &--back{
+      background-color: darkgreen;
+      transform: rotateY(180deg);
+
+    }
+  }
+
+  &:hover &__side--front{
+    transform: rotateY(180deg);
+  }
+
+  &:hover &__side--back{
+    transform: rotateY(0);
+  }
+}
+
+
+.card-p{
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  height: 41rem;
+
+
+  &__side{
+    color: white;
+    height: 41rem;
+
 
 
     font-size: 3rem;

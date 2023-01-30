@@ -73,5 +73,8 @@
   .col-orga-1-of-4 {
     width: calc(((100% - 3 * #{variables.$gutter-horizontal-orga}) / 4));
   }
+  .col-orga-1-of-5 {
+    width: calc(((100% - 4 * #{variables.$gutter-horizontal-orga}) / 5));
+  }
 }
 

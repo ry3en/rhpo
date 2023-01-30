@@ -265,6 +265,7 @@ tr:hover {
 
 .worker {
   max-width: 100%;
+  height: auto\9 ;
   display: block;
 }
 
@@ -316,11 +317,11 @@ tr:hover {
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
-  height: 51.7rem;
+  height: 34.65rem;
 }
 .card__side {
   color: white;
-  height: 51.7rem;
+  height: 34.65rem;
   font-size: 3rem;
   transition: all 0.8s ease;
   position: absolute;
@@ -342,6 +343,38 @@ tr:hover {
   transform: rotateY(180deg);
 }
 .card:hover .card__side--back {
+  transform: rotateY(0);
+}
+
+.card-p {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  height: 41rem;
+}
+.card-p__side {
+  color: white;
+  height: 41rem;
+  font-size: 3rem;
+  transition: all 0.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem46rem rgba(0, 0, 0, 0.15);
+}
+.card-p__side--front {
+  background-color: orangered;
+}
+.card-p__side--back {
+  background-color: darkgreen;
+  transform: rotateY(180deg);
+}
+.card-p:hover .card-p__side--front {
+  transform: rotateY(180deg);
+}
+.card-p:hover .card-p__side--back {
   transform: rotateY(0);
 }
 
@@ -559,6 +592,9 @@ tr:hover {
 }
 .row-orga .col-orga-1-of-4 {
   width: calc((100% - 3 * 6rem) / 4);
+}
+.row-orga .col-orga-1-of-5 {
+  width: calc((100% - 4 * 6rem) / 5);
 }
 
 /*# sourceMappingURL=style.css.map */
