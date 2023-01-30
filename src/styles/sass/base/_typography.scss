@@ -2,7 +2,7 @@
 
 body {
     font-family: "Staatliches", cursive;
-    font-weight: 900;
+    font-weight: 400    ;
     line-height: 1.7;
     padding: .5rem;
 }
@@ -54,11 +54,11 @@ body {
     word-wrap: break-word;
     color: variables.$color-gray-light ;
     -webkit-text-stroke: 1px variables.$color-dark ;
-    padding-top: 2rem;
+    padding-left: .4px;
     vertical-align: middle;
     display: table-cell;
     text-align: justify;
-    font-size: 3em;
+    font-size: 2.5rem;
     text-transform: uppercase;
     font-weight: 700;
     --webkit-background-clip: text;
@@ -70,7 +70,6 @@ body {
     color: variables.$color-gray-light ;
     -webkit-text-stroke: 1px variables.$color-dark ;
     padding-left: 2rem;
-    padding-top: 2rem;
     vertical-align: middle;
     display: table-cell;
     text-align: justify;

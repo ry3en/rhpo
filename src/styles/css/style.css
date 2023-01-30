@@ -46,6 +46,10 @@ body {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -84,7 +88,7 @@ body {
 }
 body {
   font-family: "Staatliches", cursive;
-  font-weight: 900;
+  font-weight: 400;
   line-height: 1.7;
   padding: 0.5rem;
 }
@@ -132,11 +136,11 @@ body {
   word-wrap: break-word;
   color: #E7E6E6;
   -webkit-text-stroke: 1px #000;
-  padding-top: 2rem;
+  padding-left: 0.4px;
   vertical-align: middle;
   display: table-cell;
   text-align: justify;
-  font-size: 3em;
+  font-size: 2.5rem;
   text-transform: uppercase;
   font-weight: 700;
   --webkit-background-clip: text;
@@ -149,7 +153,6 @@ body {
   color: #E7E6E6;
   -webkit-text-stroke: 1px #000;
   padding-left: 2rem;
-  padding-top: 2rem;
   vertical-align: middle;
   display: table-cell;
   text-align: justify;
@@ -240,22 +243,29 @@ tr:hover {
   height: 91vh;
   display: block;
   background-size: cover;
-  padding: 5em 4rem;
+  padding: 2em 2rem;
 }
 
 .orga {
-  margin-left: 5rem;
+  padding-left: 6rem;
+  line-height: 1.7;
+  height: 12rem;
   display: table;
 }
 .orga__logo__staff {
   padding-top: 2rem;
-  width: 20%;
   float: left;
+  vertical-align: middle;
 }
 .orga__logo_normal {
   padding-top: 2rem;
-  width: 20%;
   vertical-align: middle;
+  float: left;
+}
+
+.worker {
+  max-width: 100%;
+  display: block;
 }
 
 .btn--white {
@@ -301,6 +311,38 @@ tr:hover {
 .btn--animated {
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
+}
+
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  height: 51.7rem;
+}
+.card__side {
+  color: white;
+  height: 51.7rem;
+  font-size: 3rem;
+  transition: all 0.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem46rem rgba(0, 0, 0, 0.15);
+}
+.card__side--front {
+  background-color: orangered;
+}
+.card__side--back {
+  background-color: darkgreen;
+  transform: rotateY(180deg);
+}
+.card:hover .card__side--front {
+  transform: rotateY(180deg);
+}
+.card:hover .card__side--back {
+  transform: rotateY(0);
 }
 
 .header-ruta {
@@ -483,20 +525,19 @@ tr:hover {
   float: left;
 }
 .row-ruta [class^=col-ruta]:not(:last-child) {
-  margin-right: 4rem;
-  margin-top: 0.5rem;
+  margin: 0.5rem 4rem 4rem 1rem;
 }
 .row-ruta .col-ruta-1-of-2 {
-  width: calc((100% - 1rem) / 2);
+  width: calc((100% - 0.2rem) / 2);
 }
 .row-ruta .col-ruta-2-of-3 {
   width: calc(
-      2 * ((100% - 2 * 1rem) / 3) + 1rem
+      2 * ((100% - 2 * 0.2rem) / 3) + 0.2rem
     );
 }
 
 .row-orga {
-  max-width: 150rem;
+  max-width: 160rem;
   background-color: #fff;
   margin-top: 4rem !important;
 }
@@ -508,16 +549,16 @@ tr:hover {
   float: left;
 }
 .row-orga [class^=col-orga]:not(:last-child) {
-  margin-right: 3rem;
-  margin-top: 2rem;
+  margin: 2rem 1rem 1rem 2rem;
+}
+.row-orga .col-orga-1-of-2 {
+  width: calc((100% - 6rem) / 2);
 }
 .row-orga .col-orga-1-of-3 {
   width: calc((100% - 2 * 6rem) / 3);
-  height: 12rem;
 }
 .row-orga .col-orga-1-of-4 {
   width: calc((100% - 3 * 6rem) / 4);
-  height: 12rem;
 }
 
 /*# sourceMappingURL=style.css.map */

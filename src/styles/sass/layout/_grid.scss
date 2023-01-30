@@ -21,8 +21,7 @@
     float: left;
 
     &:not(:last-child) {
-      margin-right: 4rem;
-      margin-top: 0.5rem;
+      margin: .5rem 4rem 4rem 1rem;
     }
   }
 
@@ -59,20 +58,20 @@
     float: left;
 
     &:not(:last-child) {
-      margin-right: 3rem;
-      margin-top: 2rem;
+      margin: 2rem 1rem 1rem 2rem;
     }
   }
-  
-  .col-orga-1-of-3 {
+
+  .col-orga-1-of-2 {
+    width: calc((100% - #{variables.$gutter-horizontal-orga}) / 2);
+  }
+
+    .col-orga-1-of-3 {
     width: calc((100% - 2 * #{variables.$gutter-horizontal-orga}) / 3);
-    height: 12rem;
     
   }
   .col-orga-1-of-4 {
     width: calc(((100% - 3 * #{variables.$gutter-horizontal-orga}) / 4));
-    height: 12rem;
-
   }
 }
 

@@ -4,23 +4,30 @@
   height: 91vh;
   display: block;
   background-size: cover;
-  padding: 5em 4rem;
+  padding: 2em 2rem;
 }
 
 .orga {
-  margin-left: 5rem;
+  padding-left: 6rem;
+  line-height: 1.7;
+  height: 12rem;
   display: table;
 
   &__logo__staff {
     padding-top: 2rem;
-
-    width: 20%;
     float: left;
+    vertical-align: middle;
+
   }
 
   &__logo_normal {
     padding-top: 2rem;
-    width: 20%;
     vertical-align: middle;
+    float: left;
+
   }
+}
+.worker{
+  max-width: 100%;
+  display: block;
 }
