@@ -80,3 +80,19 @@ body {
     letter-spacing: .2rem;
     width: 80%;
 }
+
+.section-home{
+    text-decoration: none;
+    word-wrap: break-word;
+    color: variables.$color-gray-light ;
+    -webkit-text-stroke: 1px variables.$color-dark ;
+    padding-left: .4px;
+    vertical-align: middle;
+    display: table-cell;
+    text-align: justify;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    --webkit-background-clip: text;
+    letter-spacing: .2rem;
+}

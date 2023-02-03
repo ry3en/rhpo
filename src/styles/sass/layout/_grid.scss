@@ -78,3 +78,46 @@
   }
 }
 
+.row-home {
+  max-width: variables.$grid-width-home;
+  background-color: variables.$color-white;
+  margin-top: 4rem !important;
+
+  &:not(:last-child) {
+    margin-bottom: variables.$gutter-vertical-home;
+  }
+
+  @mixin clearfix {
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+
+  [class^="col-home"] {
+    background-color: rgba(variables.$color-gray-light, 50%);
+    float: left;
+
+    &:not(:last-child) {
+      margin: 2rem 1rem 1rem 2rem;
+    }
+  }
+
+  .col-home-1-of-2 {
+    width: calc((100% - #{variables.$gutter-horizontal-home}) / 2);
+  }
+
+    .col-home-1-of-3 {
+    width: calc((100% - 2 * #{variables.$gutter-horizontal-home}) / 3);
+    border-radius: 10rem;
+    height: 12rem;
+    
+  }
+  .col-home-1-of-4 {
+    width: calc(((100% - 3 * #{variables.$gutter-horizontal-home}) / 4));
+  }
+  .col-home-1-of-5 {
+    width: calc(((100% - 5 * #{variables.$gutter-horizontal-home}) / 6));
+  }
+}

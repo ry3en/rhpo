@@ -19,7 +19,7 @@
 
     &__text-box {
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -27,7 +27,7 @@
 }
 
 .header-home {
-    height: 98vh;
+    height: 120vh;
     background-image: linear-gradient(
             to top right,
             rgba(variables.$color-blue, 0.5),

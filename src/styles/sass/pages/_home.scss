@@ -1,0 +1,37 @@
+@use "../abstracts/variables" as variables;
+
+.section-home {
+    height: 70vh;
+    background-image: linear-gradient(to top right,
+            rgba(variables.$color-blue, 0.5),
+            rgba(variables.$color-purple, 0.8));
+    display: block;
+    background-size: cover;
+    padding: 2em 2rem;
+}
+
+.home {
+    padding-left: 2rem;
+    padding-top: 1.5rem;
+    line-height: 1.7;
+    display: table;
+
+    &__logo__staff {
+        padding-top: 1rem;
+        float: left;
+        vertical-align: middle;
+
+    }
+
+    &__logo_normal {
+        vertical-align: middle;
+        float: left;
+
+    }
+}
+
+.worker {
+    max-width: 100%;
+    height: auto\9;
+    display: block;
+}
