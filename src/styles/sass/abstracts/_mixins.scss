@@ -1,5 +1,4 @@
-
-
+@use "../abstracts/variables" as *;
 @mixin absCenter{
     position: absolute;
     top: 50%;
@@ -16,10 +15,12 @@
 */
 
 /*
-$breakpoint argument choices:
+$brasdaeakpoint argument choices:
 -phone
 -tab-port
--tab-land 
+-tab-land
+
+ORDER: Base + typography > general layout  + grid > page  layouts > components
 */
 
 //1em = 6px
@@ -29,7 +30,7 @@ $breakpoint argument choices:
             @content
         };
     }
-    @if $breakpoint == tab-port{
+    @if $breakpoint == tap-port{
         @media(max-width:56.25em){
             @content
         };
@@ -39,7 +40,7 @@ $breakpoint argument choices:
             @content
         };
     }
-    @if $breakpoint == big-dek{
+    @if $breakpoint == big-desktop{
         @media(max-width:112.5em){
             @content
         };

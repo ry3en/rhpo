@@ -20,6 +20,7 @@
     background-color: lightgray;
     float: left;
 
+
     &:not(:last-child) {
       margin: .5rem 4rem 4rem 1rem;
     }
@@ -74,7 +75,7 @@
     width: calc(((100% - 3 * #{variables.$gutter-horizontal-orga}) / 4));
   }
   .col-orga-1-of-5 {
-    width: calc(((100% - 5 * #{variables.$gutter-horizontal-orga}) / 6));
+    width: calc(((100% - 4 * #{variables.$gutter-horizontal-orga}) / 5));
   }
 }
 
@@ -118,6 +119,6 @@
     width: calc(((100% - 3 * #{variables.$gutter-horizontal-home}) / 4));
   }
   .col-home-1-of-5 {
-    width: calc(((100% - 5 * #{variables.$gutter-horizontal-home}) / 6));
+    width: calc(((100% - 3 * #{variables.$gutter-horizontal-home}) / 5));
   }
 }

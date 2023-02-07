@@ -1,14 +1,14 @@
-@use "../abstracts/variables" as variables;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 body {
-    font-family: "Dancing Script", cursive;
+    font-family: "Kalam", sans-serif;
     font-weight: 900    ;
     line-height: 1.7;
-    padding: .5rem;
 }
 
 .header-primary{
-    color: variables.$color-white;
+    color: $color-white;
     text-transform: uppercase;
 
     --webkit-backface-visibility: hidden;
@@ -21,6 +21,12 @@ body {
         letter-spacing: 2.5rem;
 
         animation: moveInLeft 1s ease-out;
+
+        @include respond(phone){
+            letter-spacing: 1rem;
+            font-size: 6rem;
+        }
+
     }
 
     &--sub{
@@ -33,7 +39,7 @@ body {
 
 }
 .header-primary-ruta{
-    color: variables.$color-dark-light;
+    color: $color-dark-light;
     text-transform: uppercase;
 
     --webkit-backface-visibility: hidden;
@@ -41,7 +47,7 @@ body {
 
 }
 .header-secondary{
-    color: variables.$color-dark-light ;
+    color: $color-dark-light ;
     -webkit-text-stroke: 2px #000;
     font-size: 3.5rem;
     text-transform: uppercase;
@@ -52,8 +58,8 @@ body {
 }
 .header-orga{
     word-wrap: break-word;
-    color: variables.$color-gray-light ;
-    -webkit-text-stroke: 1px variables.$color-dark ;
+    color: $color-gray-light ;
+    -webkit-text-stroke: 1px $color-dark ;
     padding-left: .4px;
     vertical-align: middle;
     display: table-cell;
@@ -67,8 +73,8 @@ body {
 }
 .header-orga-staff{
     word-wrap: break-word;
-    color: variables.$color-gray-light ;
-    -webkit-text-stroke: 1px variables.$color-dark ;
+    color: $color-gray-light ;
+    -webkit-text-stroke: 1px $color-dark ;
     padding-left: 2rem;
     vertical-align: middle;
     display: table-cell;
@@ -84,8 +90,8 @@ body {
 .section-home{
     text-decoration: none;
     word-wrap: break-word;
-    color: variables.$color-gray-light ;
-    -webkit-text-stroke: 1px variables.$color-dark ;
+    color: $color-gray-light ;
+    -webkit-text-stroke: 1px $color-dark ;
     padding-left: .4px;
     vertical-align: middle;
     display: table-cell;
