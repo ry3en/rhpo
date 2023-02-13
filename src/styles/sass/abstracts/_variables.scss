@@ -19,15 +19,16 @@ $default-font-size: 1.6rem;
 
 //GRID
 $grid-width-ruta:120rem;
-$gutter-vertical-ruta: 20rem;
+$gutter-vertical-ruta: 8rem;
 $gutter-horizontal-ruta: .2rem;
 
 $grid-width-orga:160rem;
-$gutter-vertical-orga: 50rem;
-$gutter-horizontal-orga:6rem;
+$gutter-vertical-orga: .5rem;
+$gutter-vertical-orga-small: .5rem;
+$gutter-horizontal-orga:.5rem;
 
 $grid-width-home:160rem;
-$gutter-vertical-home: 50rem;
+$gutter-vertical-home: 8rem;
 $gutter-horizontal-home:6rem;
 
 //MIXINS

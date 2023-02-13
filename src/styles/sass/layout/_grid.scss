@@ -1,11 +1,13 @@
-@use "../abstracts/variables" as variables;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
 .row-ruta {
-  max-width: variables.$grid-width-ruta;
-  background-color: variables.$color-white;
+  max-width: $grid-width-ruta;
+  background-color: $color-white;
   margin: 0 auto;
 
   &:not(:last-child) {
-    margin-bottom: variables.$gutter-vertical-ruta;
+    margin-bottom: $gutter-vertical-ruta;
   }
 
   @mixin clearfix {
@@ -27,24 +29,20 @@
   }
 
   .col-ruta-1-of-2 {
-    width: calc((100% - #{variables.$gutter-horizontal-ruta}) / 2);
+    width: calc((100% - #{$gutter-horizontal-ruta}) / 2);
   }
   .col-ruta-2-of-3 {
     width: calc(
-      2 * ((100% - 2 * #{variables.$gutter-horizontal-ruta}) / 3) + #{variables.$gutter-horizontal-ruta}
+      2 * ((100% - 2 * #{$gutter-horizontal-ruta}) / 3) + #{$gutter-horizontal-ruta}
     );
   }
 }
 
 
 .row-orga {
-  max-width: variables.$grid-width-orga;
-  background-color: variables.$color-white;
+  max-width: $grid-width-orga;
+  background-color: $color-white;
   margin-top: 4rem !important;
-
-  &:not(:last-child) {
-    margin-bottom: variables.$gutter-vertical-orga;
-  }
 
   @mixin clearfix {
     &::after {
@@ -55,37 +53,47 @@
   }
 
   [class^="col-orga"] {
-    background-color: rgba(variables.$color-gray-light, 50%);
+    background-color: rgba($color-gray-light, 50%);
     float: left;
 
     &:not(:last-child) {
       margin: 2rem 1rem 1rem 2rem;
+
+      
+      @include respond(tap-port){
+      margin: 1rem .5rem .5rem 1rem;
+        
+      }
+    }
+
+    @include respond(tab-port){
+      width: 100%;
     }
   }
 
   .col-orga-1-of-2 {
-    width: calc((100% - #{variables.$gutter-horizontal-orga}) / 2);
+    width: calc((100% - #{$gutter-horizontal-orga}) / 2);
   }
 
     .col-orga-1-of-3 {
-    width: calc((100% - 2 * #{variables.$gutter-horizontal-orga}) / 3);
+    width: calc((100% - 2 * #{$gutter-horizontal-orga}) / 3);
     
   }
   .col-orga-1-of-4 {
-    width: calc(((100% - 3 * #{variables.$gutter-horizontal-orga}) / 4));
+    width: calc(((100% - 3 * #{$gutter-horizontal-orga}) / 4));
   }
   .col-orga-1-of-5 {
-    width: calc(((100% - 4 * #{variables.$gutter-horizontal-orga}) / 5));
+    width: calc(((100% - 4 * #{$gutter-horizontal-orga}) / 5));
   }
 }
 
 .row-home {
-  max-width: variables.$grid-width-home;
-  background-color: variables.$color-white;
+  max-width: $grid-width-home;
+  background-color: $color-white;
   margin-top: 4rem !important;
 
   &:not(:last-child) {
-    margin-bottom: variables.$gutter-vertical-home;
+    margin-bottom: $gutter-vertical-home;
   }
 
   @mixin clearfix {
@@ -97,7 +105,7 @@
   }
 
   [class^="col-home"] {
-    background-color: rgba(variables.$color-gray-light, 50%);
+    background-color: rgba($color-gray-light, 50%);
     float: left;
 
     &:not(:last-child) {
@@ -106,19 +114,19 @@
   }
 
   .col-home-1-of-2 {
-    width: calc((100% - #{variables.$gutter-horizontal-home}) / 2);
+    width: calc((100% - #{$gutter-horizontal-home}) / 2);
   }
 
     .col-home-1-of-3 {
-    width: calc((100% - 2 * #{variables.$gutter-horizontal-home}) / 3);
+    width: calc((100% - 2 * #{$gutter-horizontal-home}) / 3);
     border-radius: 10rem;
     height: 12rem;
     
   }
   .col-home-1-of-4 {
-    width: calc(((100% - 3 * #{variables.$gutter-horizontal-home}) / 4));
+    width: calc(((100% - 3 * #{$gutter-horizontal-home}) / 4));
   }
   .col-home-1-of-5 {
-    width: calc(((100% - 3 * #{variables.$gutter-horizontal-home}) / 5));
+    width: calc(((100% - 3 * #{$gutter-horizontal-home}) / 5));
   }
 }
