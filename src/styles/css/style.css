@@ -5,7 +5,7 @@
 1800px +: Big Desktop
 */
 /*
-$brasdaeakpoint argument choices:
+$breakpoint argument choices:
 -phone
 -tab-port
 -tab-land
@@ -97,10 +97,14 @@ body {
   letter-spacing: 2.5rem;
   animation: moveInLeft 1s ease-out;
 }
+@media (max-width: 75em) {
+  .header-primary--main {
+    letter-spacing: 2rem;
+  }
+}
 @media (max-width: 37.5em) {
   .header-primary--main {
-    letter-spacing: 1rem;
-    font-size: 6rem;
+    letter-spacing: 0.5rem;
   }
 }
 .header-primary--sub {
@@ -127,6 +131,10 @@ body {
   --webkit-background-clip: text;
   letter-spacing: 0.2rem;
   transition: all 0.2s;
+}
+.header-secondary:hover {
+  transform: skewY(2def) skewX(15deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .header-orga {
@@ -283,7 +291,7 @@ tr:hover {
 }
 
 .section-orga {
-  height: 91vh;
+  height: 120vh;
   display: block;
   background-size: cover;
   padding: 2em 2rem;
@@ -337,7 +345,7 @@ tr:hover {
   opacity: 0;
 }
 .btn:active {
-  transform: translateY(-1px);
+  transform: translateY(-10px);
   box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 .btn::after {
@@ -360,11 +368,11 @@ tr:hover {
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
-  height: 34.65rem;
+  height: 22rem;
 }
 .card__side {
   color: white;
-  height: 34.65rem;
+  height: 22rem;
   font-size: 3rem;
   transition: all 0.8s ease;
   position: absolute;
@@ -392,11 +400,11 @@ tr:hover {
 .card-p {
   perspective: 150rem;
   -moz-perspective: 150rem;
-  height: 41rem;
+  height: 22rem;
 }
 .card-p__side {
   color: white;
-  height: 41rem;
+  height: 22rem;
   font-size: 3rem;
   transition: all 0.8s ease;
   position: absolute;
@@ -422,7 +430,7 @@ tr:hover {
 }
 
 .header-ruta {
-  height: 7vh;
+  height: 8vh;
   background-color: #E7E6E6;
   background-size: cover;
   background-position: top;
@@ -615,7 +623,7 @@ tr:hover {
 .row-orga {
   max-width: 160rem;
   background-color: #ffffff;
-  margin-top: 4rem !important;
+  margin-top: 2rem !important;
 }
 .row-orga [class^=col-orga] {
   background-color: rgba(231, 230, 230, 0.5);
@@ -626,27 +634,27 @@ tr:hover {
 }
 @media (max-width: 56.25em) {
   .row-orga [class^=col-orga]:not(:last-child) {
-    margin-right: 2rem;
-    margin-bottom: 1rem;
+    margin: 1rem 0.5rem 0.5rem 1rem;
   }
 }
 .row-orga .col-orga-1-of-2 {
-  width: calc((100% - 0.5rem) / 2);
+  width: calc((100% - 0.5rem) / 2 - 3%);
 }
 .row-orga .col-orga-1-of-3 {
-  width: calc((100% - 2 * 0.5rem) / 3);
+  width: calc((100% - 2 * 0.5rem) / 3 - 3%);
 }
 .row-orga .col-orga-1-of-4 {
-  width: calc((100% - 3 * 0.5rem) / 4);
+  width: calc((100% - 3 * 0.5rem) / 4 - 3%);
 }
 .row-orga .col-orga-1-of-5 {
-  width: calc((100% - 4 * 0.5rem) / 5);
+  width: calc((100% - 4 * 0.5rem) / 5 - 3%);
 }
 
 .row-home {
   max-width: 160rem;
   background-color: #ffffff;
   margin-top: 4rem !important;
+  overflow-wrap: break-word;
 }
 .row-home:not(:last-child) {
   margin-bottom: 8rem;

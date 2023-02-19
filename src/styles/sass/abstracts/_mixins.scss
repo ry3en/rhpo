@@ -15,7 +15,7 @@
 */
 
 /*
-$brasdaeakpoint argument choices:
+$breakpoint argument choices:
 -phone
 -tab-port
 -tab-land
@@ -24,6 +24,7 @@ ORDER: Base + typography > general layout  + grid > page  layouts > components
 */
 
 //1em = 6px
+//1 rem = 10px
 @mixin respond($breakpoint){
     @if $breakpoint == phone{
         @media(max-width:37.5em){
