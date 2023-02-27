@@ -26,8 +26,8 @@ ORDER: Base + typography > general layout  + grid > page  layouts > components
 //1em = 6px
 //1 rem = 10px
 @mixin respond($breakpoint){
-    @if $breakpoint == phone{
-        @media(max-width:37.5em){
+    @if $breakpoint == big-desktop{
+        @media(max-width:112.5em){
             @content
         };
     }
@@ -41,9 +41,13 @@ ORDER: Base + typography > general layout  + grid > page  layouts > components
             @content
         };
     }
-    @if $breakpoint == big-desktop{
-        @media(max-width:112.5em){
+
+    @if $breakpoint == phone{
+        @media(max-width:37.5em){
             @content
         };
     }
+
+
+
 }
