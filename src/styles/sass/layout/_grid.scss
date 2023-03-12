@@ -18,7 +18,7 @@
     }
   }
 
-  [class^="col-orga"] {
+  [class^="col-ruta"] {
     background-color: rgba($color-gray-light, 50%);
     float: left;
 
@@ -27,7 +27,7 @@
       margin-right: $gutter-horizontal-orga;
 
 
-      @include respond(tap-port) {
+      @include respond(tab-port) {
         margin-right:  $gutter-horizontal-orga-small;
         margin-bottom: $gutter-vertical-orga-small;
 
@@ -68,11 +68,12 @@
     float: left;
 
     &:not(:last-child) {
-      margin-bottom: $gutter-vertical-orga;
       margin-right: $gutter-horizontal-orga;
+      margin-bottom: $gutter-vertical-orga;
 
 
-      @include respond(tap-port) {
+
+      @include respond(tab-port) {
         margin-right: $gutter-horizontal-orga-small;
         margin-bottom: $gutter-vertical-orga-small;
 
@@ -85,7 +86,7 @@
   }
 
   .col-orga-1-of-2 {
-    width: (calc(((100% - #{$gutter-horizontal-orga}) / 2))) ;
+    width: calc(calc(((100% - #{$gutter-horizontal-orga}) / 2)) - 2%) ;
   }
 
   .col-orga-1-of-3 {
@@ -105,12 +106,8 @@
 .row-home {
   max-width: $grid-width-home;
   background-color: $color-white;
-  margin-top: 4rem !important;
-  overflow-wrap: break-word;
-
-  &:not(:last-child) {
-    margin-bottom: $gutter-vertical-home;
-  }
+  margin: 0 auto;
+  text-align: center;
 
   @mixin clearfix {
     &::after {
@@ -120,23 +117,54 @@
     }
   }
 
+
   [class^="col-home"] {
     background-color: rgba($color-gray-light, 50%);
     float: left;
 
     &:not(:last-child) {
-      margin: 2rem 1rem 1rem 2rem;
+      margin-bottom: $gutter-vertical-home;
+      margin-right: $gutter-horizontal-home;
+
+
+
+      @include respond(tab-port) {
+        margin-right: $gutter-horizontal-home-small;
+        margin-bottom: $gutter-vertical-home-small;
+
+      }
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
     }
   }
 
   .col-home-1-of-2 {
-    width: calc((100% - #{$gutter-horizontal-home}) / 2);
+    width: calc((calc((100% - #{$gutter-horizontal-home}) / 2)) - 2%);
+
+    border-radius: 10rem;
+    height: 12rem;
+
+    @include respond(tab-port) {
+      width: calc((calc((100% - #{$gutter-horizontal-home}) / 2)) - 3%);
+
+      border-radius: 5rem;
+      height: 9rem;
+    }
   }
 
   .col-home-1-of-3 {
-    width: calc((100% - 2 * #{$gutter-horizontal-home}) / 3);
+    width: calc(calc((100% - 2 * #{$gutter-horizontal-home}) / 3) - 2%);
+
     border-radius: 10rem;
     height: 12rem;
+
+    @include respond(tab-port) {
+      border-radius: 5rem;
+      height: 9rem;
+    }
+
 
   }
 

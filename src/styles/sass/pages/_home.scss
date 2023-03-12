@@ -11,13 +11,12 @@
 }
 
 .home {
-    padding-left: 2rem;
-    padding-top: 1.5rem;
-    line-height: 1.7;
-    display: table;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2em;
 
     &__logo__staff {
-        padding-top: 1rem;
         float: left;
         vertical-align: middle;
 

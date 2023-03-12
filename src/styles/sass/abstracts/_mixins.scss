@@ -31,7 +31,7 @@ ORDER: Base + typography > general layout  + grid > page  layouts > components
             @content
         };
     }
-    @if $breakpoint == tap-port{
+    @if $breakpoint == tab-port{
         @media(max-width:56.25em){
             @content
         };
